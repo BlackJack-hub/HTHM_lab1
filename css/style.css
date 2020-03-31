@@ -212,3 +212,34 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.tftable {
+  font-size: 12px;
+  color: #333333;
+  width: 100%;
+  border-width: 1px;
+  border-color: #bcaf91;
+  border-collapse: collapse;
+}
+.tftable th {
+  font-size: 12px;
+  background-color: #ded0b0;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #bcaf91;
+  text-align: left;
+}
+.tftable tr {
+  background-color: #e9dbbb;
+}
+.tftable td {
+  font-size: 12px;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #bcaf91;
+  text-align: center;
+}
+.tftable tr:hover {
+  background-color: #ffffff;
+}
