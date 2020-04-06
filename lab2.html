@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
-<title>Lab1 </title>
+<title>Lab2 </title>
 <meta name="author" content="Danil Kapustianskyi" />
-<meta name="description" content="Lab 1" />
-<meta name="keywords" content="HTML,CSS" />
+<meta name="description" content="Lab 2" />
+<meta name="keywords" content="HTML,CSS,Test,Time,Data" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <link rel="shortcut icon" type="image/x-icon" href="css/images/dk.jpg" />
@@ -13,22 +13,82 @@
   <div class="shell">
     <div id="logo-holder">
       <h1 id="logo"><a href="http://www.differencebetween.net/technology/difference-between-hypertext-and-hypermedia/">Hypertext and hypermedia</a></h1>
-      <p id="quote">Laboratory work 1</p>
+      <p id="quote">Laboratory work 2</p>
     </div>
     <div id="navigation">
       <ul>
         <li><a href="#" class="active"><span>Home</span></a></li>
-        <li><a href="index.html"><span>Laboratory work 1</span></a></li>
-        <li><a href="#"><span>Laboratory work 3</span></a></li>
-        <li><a href="#"><span>Laboratory work 4</span></a></li>
+        <li><a href="index.html"><span>Lab work 1</span></a></li>
+        <li><a href="#"><span>Lab work 3</span></a></li>
+        <li><a href="#"><span>Lab work 4</span></a></li>
         <li><a href="#"><span>Marks</span></a></li>
+        <li><a href="https://time.is/ru/Kyiv"><span id="time"></span></a></li>
       </ul>
     </div>
     <div class="cl">&nbsp;</div>
   </div>
 </div>
-<div class="cl"></div>
+<h2 id="test_title">Test</h2>
+<div class="test_div">
+<div class="cl" ></div>
+
+<form name="test"> 
+<h2>1. С помощью какого атрибута можно задать текст для картинки, который будет отображен, если её не удастся загрузить? </h2><br>
+<input type="radio" name="q1" value="a"><span> title </span><br>
+<input type="radio" name="q1" value="b"><span> caption</span><br>
+<input type="radio" name="q1" value="c"><span> popup </span><br>
+<input type="radio" name="q1" value="d"><span id="correct1"> alt </span><br>
+<hr>
+<h2>2. С помощью какого атрибута задаётся ширина поля textarea?</h2><br>
+<input type="radio" name="q2" value="a"><span id="correct2"> width </span><br>
+<input type="radio" name="q2" value="b"><span> rows </span><br>
+<input type="radio" name="q2" value="c"><span> cols</span><br>
+<input type="radio" name="q2" value="d"><span> size</span><br>
+<hr>
+<h2>3. С помощью какого тега создаётся раскрывающийся список в форме?</h2><br>
+<input type="radio" name="q3" value="a"><span id="correct3"> select</span><br>
+<input type="radio" name="q3" value="b"><span> pad</span><br>
+<input type="radio" name="q3" value="c"><span> radio</span><br>
+<input type="radio" name="q3" value="d"><span> multi</span><br>
+<hr>
+<h2>4. С помощью какого тега в таблицах создаются строки?</h2><br>
+<input type="radio" name="q4" value="a"><span> &lt;td&gt;</span><br>
+<input type="radio" name="q4" value="b"><span id="correct4"> &lt;th&gt;</span><br>
+<input type="radio" name="q4" value="c"><span> &lt;tr&gt;</span><br>
+<hr>
+
+
+<h2>5. Каких тегов в HTML не существует? </h2><br>
+<input type="radio" name="q5" value="a"><span id="correct5"> Тройных</span><br>
+<input type="radio" name="q5" value="b"><span> Парных</span><br>
+<input type="radio" name="q5" value="c"><span> Одиночных</span><br>
+<hr>
+<h2>6. Как правильно оформить нумерованный список?</h2><br>
+<input type="radio" name="q6" value="a"><span>  Разделить каждую строку с помощью тега &lt;br&gt;, на каждой новой строке перед текстом добавить число, точку и пробел </span><br>
+<input type="radio" name="q6" value="b"><span>  Просто написать текст в формате: число, точка, пробел, текст, перенос строки. Браузер автоматически распознает данную структуру </span><br>
+<input type="radio" name="q6" value="c"><span id="correct6">  Поместить внутрь тега &lt;ol&gt; теги &lt;li&gt;, внутри которых написать текст </span><br>
+
+<hr>
+<h2>7. Как оформляется комментарий в HTML? </h2><br>
+<input type="radio" name="q7" value="a"><span id="correct7">  &lt;!—комментарий --&gt; </span><br>
+<input type="radio" name="q7" value="b"><span>  // комментарий</span><br>
+<input type="radio" name="q7" value="c"><span>  /* комментарий */ </span><br>
+
+<hr>
+<h2>8. Какие теги существуют в HTML? </h2><br>
+<input type="checkbox" id="q81" value="a"><span id="correct81"> &lt;object&gt;</span><br>
+<input type="checkbox" id="q82" value="b"><span id="correct82"> &lt;param&gt;</span><br>
+<input type="checkbox" id="q83" value="c"><span> &lt;rgb&gt;</span><br>
+<input type="checkbox" id="q84" value="d"><span> &lt;space&gt;</span><br>
+<input type="checkbox" id="q85" value="e"><span id="correct83"> &lt;meta&gt;</span><br>
+<input type="checkbox" id="q86" value="f"><span id="correct84"> &lt;script&gt;</span><br>
+<input type="checkbox" id="q87" value="g"><span> &lt;bar&gt;</span><br>
 <br>
+<input class="myButton" type="button" onclick="Check()" value="Check answers"><br>
+<label id="score"></label>
+</form>
+
+</div>
 <div class="cl"></div>
 
 <div class="footer">
@@ -37,5 +97,6 @@
     <div style="clear:both;"></div>
   </div>
 </div>
+<script src="js/lab2.js"></script>
 </body>
 </html>

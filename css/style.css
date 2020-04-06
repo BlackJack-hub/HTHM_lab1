@@ -243,3 +243,50 @@ img {
 .tftable tr:hover {
   background-color: #ffffff;
 }
+/*.test_div .correct {
+  color: green;
+}*/
+.test_div span {
+  font-size: 18px;
+}
+#time {
+  font-size: 30px;
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+}
+.test_div {
+  width: 50%;
+  padding-left: 25%;
+}
+#test_title {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 1%;
+}
+.myButton {
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #2f6627;
+}
+.myButton:hover {
+  background-color: #5cbf2a;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+#score {
+  font-size: 24px;
+  color: #0252aa;
+  padding-bottom: 2%;
+}
