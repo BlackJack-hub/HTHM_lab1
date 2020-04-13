@@ -252,7 +252,7 @@ img {
 #time {
   font-size: 30px;
   color: green;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 .test_div {
   width: 50%;
@@ -265,6 +265,9 @@ img {
   padding-top: 1%;
 }
 .myButton {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   background-color: #44c767;
   border-radius: 28px;
   border: 1px solid #18ab29;
@@ -288,5 +291,51 @@ img {
 #score {
   font-size: 24px;
   color: #0252aa;
-  padding-bottom: 2%;
+}
+.buy {
+  width: 50%;
+  padding-left: 25%;
+}
+#buy_title {
+  font-size: 30px;
+  text-align: center;
+  margin: 5%;
+}
+#date {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 18px;
+  font-family: Arial;
+}
+#buy_text {
+  font-size: 18px;
+}
+.buy_button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0px 3px 14px -7px #9fb4f2;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 6px;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 9px 32px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0px 1px 0px #283966;
+  margin-bottom: 2%;
+}
+.buy_button:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.buy_button:active {
+  position: relative;
+  top: 1px;
 }
