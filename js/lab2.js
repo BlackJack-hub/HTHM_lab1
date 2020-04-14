@@ -101,7 +101,7 @@ window.onload = function repeat() {
     document.getElementById("time").innerHTML =
       hours + ":" + minutes + ":" + seconds;
     document.getElementById("time").style.cssText = `  font-size: 30px;
-    color: green;
+    color: rgb(162, 121, 143);
     font-family: 'Courier New', Courier, monospace;`;
   }, 1000);
 };
