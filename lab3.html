@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<title>Laboratory work 3 </title>
+<meta name="author" content="Danil Kapustianskyi" />
+<meta name="description" content="Lab 2" />
+<meta name="keywords" content="HTML,CSS,Test,Time,Data" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style_lab3.css" type="text/css" media="all" />
+<link rel="shortcut icon" type="image/x-icon" href="css/images/dk.jpg" />
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<header>
+  <div class="shell">
+    <div id="logo-holder">
+      <h1 id="logo"><a href="http://www.differencebetween.net/technology/difference-between-hypertext-and-hypermedia/">Hypertext and hypermedia</a></h1>
+      <p id="quote">Laboratory work 3</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active"><span>Home</span></a></li>
+        <li><a href="index.html"><span>Lab work 1</span></a></li>
+        <li><a href="lab2.html"><span>Lab work 2</span></a></li>
+        <li><a href="#"><span>Lab work 4</span></a></li>
+        <li><a href="game/index.html" target="_blank"><span>Game</span></a></li>
+        <li><a href="https://time.is/ru/Kyiv"><span id="time"></span></a></li>
+      </ul>
+    </nav>
+    <div class="cl">&nbsp;</div>
+  </div>
+</header>
+<main>
+<h2 id="test_title">Form</h2>
+<form>
+<p><input class="input" type="url" name="homepage" placeholder="https://example.com" required></p>
+<p><input class="input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="hypermedia@nure.ua"></p>
+<p><input class="input"  type="tel" required pattern="[0-9]{10}" maxlength="10" placeholder="05050505555"></p>
+<p><input class="input" type="date" min="2020-05-25" max="2020-07-21" required></p>
+<p><input id="normal" style="margin-left: 46%;" type="submit" value="Отправить" ></p>
+</form>
+<br>
+<h3 id="test_title">Click on map</h3>
+<img id="lab3_map" src="images/08-01.gif" width="720px" height="360px" title="tap me">
+<h3 id="test_title"><a href="game/index.html" target="_blank">Play Canvas Game</a></h3><br>
+<h3 id="test_title">Video player</h3>
+
+<div style="text-align:center"> 
+  <video id="videoTask" width="420" controls="controls" poster="images/maxresdefault.jpg">
+    <source src="video/Kiesza - Hideaway (Official Video).webm" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video><br>
+  <button id="play" onclick="playPause()">Play/Pause</button> 
+  <button id="big" onclick="makeBig()">Big</button>
+  <button id="small" onclick="makeSmall()">Small</button>
+  <button id="normal" onclick="makeNormal()">Normal</button>
+  <br><br>
+  <h3 id="test_title">Audio player</h3>
+  <audio src="music/michael-jackson_-_billie-jean.mp3" controls></audio>
+  <br><br>
+</div> 
+<div class="cl"></div>
+</main>
+<footer>
+  <div class="shell">
+    <p class="lf">Copyright &copy; 2020 <a href="index.html">Danil Kapustianskyi</a> - All Rights Reserved</p>
+    <div style="clear:both;"></div>
+  </div>
+</footer>
+<script src="js/lab2.js"></script>
+<script src="js/lab3.js"></script>
+</body>
+</html>
