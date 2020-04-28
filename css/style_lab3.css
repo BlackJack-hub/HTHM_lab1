@@ -414,3 +414,6 @@ br {
 
   z-index: -1;
 }
+#map {
+  text-align: center;
+}
