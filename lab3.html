@@ -2,14 +2,14 @@
 <head>
 <title>Laboratory work 3 </title>
 <meta name="author" content="Danil Kapustianskyi" />
-<meta name="description" content="Lab 2" />
+<meta name="description" content="Lab 3" />
 <meta name="keywords" content="HTML,CSS,Test,Time,Data" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/style_lab3.css" type="text/css" media="all" />
 <link rel="shortcut icon" type="image/x-icon" href="css/images/dk.jpg" />
 </head>
 <body>
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
 <header>
   <div class="shell">
     <div id="logo-holder">
@@ -32,7 +32,7 @@
 <main>
 <h2 id="test_title">Form</h2>
 <form>
-<p><input class="input" type="url" name="homepage" placeholder="https://example.com" required></p>
+<p><input class="input" type="url" name="homepage" placeholder="https://example.com" pattern="https://.*" required></p>
 <p><input class="input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="hypermedia@nure.ua"></p>
 <p><input class="input"  type="tel" required pattern="[0-9]{10}" maxlength="10" placeholder="05050505555"></p>
 <p><input class="input" type="date" min="2020-05-25" max="2020-07-21" required></p>
@@ -41,9 +41,14 @@
 <br>
 <h3 id="test_title">Click on map</h3>
 <img id="lab3_map" src="images/08-01.gif" width="720px" height="360px" title="tap me">
-<h3 id="test_title"><a href="game/index.html" target="_blank">Play Canvas Game</a></h3><br>
-<h3 id="test_title">Video player</h3>
+<h3 id="test_title"><a href="game/canvas.html" target="_blank">Canvas</a></h3><br>
 
+<h3 id="test_title">Карта</h3>
+<center <div id="map">
+  <iframe src="https://www.google.com/maps/embed?pb=" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <h4 id="loc"></h4>
+</div>
+<h3 id="test_title">Video player</h3>
 <div style="text-align:center"> 
   <video id="videoTask" width="420" controls="controls" poster="images/maxresdefault.jpg">
     <source src="video/Kiesza - Hideaway (Official Video).webm" type="video/mp4">
