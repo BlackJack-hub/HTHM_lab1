@@ -40,6 +40,9 @@ function showPosition(position) {
     latlon +
     "&zoom=14&size=600x400&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
   document.getElementById("map").innerHTML = "<img src='" + img_url + "'>";
+  document.getElementById("coord").innerHTML =
+    position.coords.latitude + "," + position.coords.longitude;
+  console.log(position.coords.latitude + "," + position.coords.longitude);
 }
 
 function showError(error) {
