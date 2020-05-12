@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Changa", sans-serif;
+  src: url("Fonts/changa-v6-latin-regular.woff") format("woff"),
+    url("Fonts/changa-v6-latin-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: #777;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-image: url(background.png);
+  background-repeat: repeat;
+}
+
+.main-header {
+  background-image: url("italy-flag.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+.food-name {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-family: "Changa";
+  font-weight: normal;
+  color: black;
+}
+.food-name-large {
+  font-size: 8em;
+}
+.content-section {
+  margin: 1em;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  background-color: rgb(255, 250, 250, 0.9);
+}
+.section-header {
+  font-family: "Changa";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 10px;
+}
+.main-footer {
+  background-image: url(footerImage.png);
+
+  padding: 0.25em 0;
+  float: center;
+}
+.button {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+.button-primary {
+  color: white;
+  background-color: #56ccf2;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+.button-primary:hover {
+  background-color: #2d9cdb;
+}
+.restaurant-item {
+  margin: 30px;
+}
+.restaurant-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+.restaurant-item-image {
+  height: 250px;
+}
+.restaurant-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.restaurant-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.restaurant-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.order-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+.order-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.order-row {
+  display: flex;
+}
+.order-item {
+  width: 45%;
+}
+.order-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+.order-quantity {
+  width: 35%;
+}
+.order-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+.order-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+.button-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+.button-danger:hover {
+  background-color: #cc4c4c;
+}
+.order-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+.order-row:last-child {
+  border-bottom: 1px solid black;
+}
+.order-row:last-child .order-column {
+  border: none;
+}
+.order-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.order-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+.order-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.button-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+  padding-bottom: 2%;
+}
+.restaurant-item-image:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.main-footer {
+  height: 200px;
+  background-color: white;
+  background: url(footerImage.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer {
+  background-color: white;
+}

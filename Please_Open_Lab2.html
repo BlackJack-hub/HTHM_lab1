@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <style>
+      body {
+        background-repeat: no-repeat;
+        background-position: top center;
+        margin: 1em;
+        font-family: "Ubuntu Condensed", sans-serif;
+      }
+      h1 {
+        color: #3e5336;
+        text-align: center;
+      }
+      .menu {
+        color: black;
+        background-color: #948f47;
+        padding: 30px;
+        width: 70%;
+        margin-left: 15%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 28px;
+      }
+
+      .active,
+      .menu:hover {
+        background-color: #f6da73;
+      }
+
+      .menu:after {
+        color: yellow;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .submenu {
+        color: #f6f5f0;
+        background-color: #e55b7e;
+        margin-left: 15%;
+        margin-right: 15%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      ul {
+        margin: 0px;
+        padding: 0px 10px 0px 10px;
+      }
+      ul li {
+        list-style: none;
+        border-bottom: 1px solid yellow;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 18px;
+      }
+      ul :hover {
+        background-color: darkorange;
+      }
+    </style>
+    <h1>Laboratory work 2 additional task</h1>
+    <button class="menu">Menu 1</button>
+    <div class="submenu">
+      <ul>
+        <li>Submenu 1</li>
+        <li>Submenu 2</li>
+        <li>Submenu 3</li>
+      </ul>
+    </div>
+    <button class="menu">Menu 2</button>
+    <div class="submenu">
+      <ul>
+        <li>Submenu 1</li>
+        <li>Submenu 2</li>
+      </ul>
+    </div>
+    <button class="menu">Menu 3</button>
+    <div class="submenu">
+      <ul>
+        <li>Submenu 1</li>
+        <li>Submenu 2</li>
+        <li>Submenu 3</li>
+        <li>Submenu 4</li>
+      </ul>
+    </div>
+    <script>
+      var menu = document.getElementsByClassName("menu");
+      for (let i = 0; i < menu.length; i++) {
+        menu[i].addEventListener("click", show, false);
+      }
+      function show() {
+        this.classList.toggle("active");
+        var block = this.nextElementSibling;
+        if (block.style.maxHeight) {
+          block.style.maxHeight = null;
+        } else {
+          block.style.maxHeight = block.scrollHeight + "px";
+        }
+      }
+    </script>
+  </body>
+</html>
